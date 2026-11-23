@@ -1,0 +1,21 @@
+Ticker,CompanyName,Sector,CurrentPrice
+AAPL,Apple Inc.,Technology,182.50
+MSFT,Microsoft Corporation,Technology,425.20
+GOOGL,Alphabet Inc.,Communication Services,175.80
+AMZN,Amazon.com Inc.,Consumer Cyclical,185.30
+NVDA,NVIDIA Corporation,Technology,130.40
+TSLA,Tesla Inc.,Consumer Cyclical,215.60
+META,Meta Platforms Inc.,Communication Services,505.75
+JNJ,Johnson & Johnson,Healthcare,156.40
+V,Visa Inc.,Financial Services,272.90
+WMT,Walmart Inc.,Consumer Defensive,68.80
+JPM,JPMorgan Chase & Co.,Financial Services,202.10
+PG,Procter & Gamble Co.,Consumer Defensive,164.20
+BRK.B,Berkshire Hathaway Inc.,Financial Services,435.50
+UNH,UnitedHealth Group Inc.,Healthcare,512.30
+XOM,Exxon Mobil Corporation,Energy,118.70
+AMD,Advanced Micro Devices,Technology,148.90
+NFLX,Netflix Inc.,Communication Services,645.10
+CRM,Salesforce Inc.,Technology,258.40
+COST,Costco Wholesale Corporation,Consumer Defensive,845.20
+DIS,The Walt Disney Company,Communication Services,104.30

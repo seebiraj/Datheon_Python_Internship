@@ -1,0 +1,6 @@
+Ticker,CompanyName,Shares,BuyPrice,CurrentMarketPrice,TotalInvested,CurrentValuation,GainLossDollar,GainLossPercent,LoggedAt
+AAPL,Apple Inc.,15,150.0,182.5,2250.0,2737.5,487.5,21.67,2026-11-23 21:52:45
+NVDA,NVIDIA Corporation,25,95.0,130.4,2375.0,3260.0,885.0,37.26,2026-11-23 21:52:45
+MSFT,Microsoft Corporation,10,390.0,425.2,3900.0,4252.0,352.0,9.03,2026-11-23 21:52:45
+TSLA,Tesla Inc.,12,240.0,215.6,2880.0,2587.2,-292.8,-10.17,2026-11-23 21:52:45
+AMZN,Amazon.com Inc.,20,165.0,185.3,3300.0,3706.0,406.0,12.3,2026-11-23 21:52:45

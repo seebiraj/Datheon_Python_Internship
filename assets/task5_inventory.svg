@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 450" width="100%" height="100%">
+  <!-- Window Base -->
+  <rect width="850" height="450" rx="12" fill="#090d16" stroke="#334155" stroke-width="2"/>
+  <rect width="850" height="38" rx="12" fill="#1e293b"/>
+  <circle cx="22" cy="19" r="6" fill="#ef4444"/>
+  <circle cx="40" cy="19" r="6" fill="#f59e0b"/>
+  <circle cx="58" cy="19" r="6" fill="#10b981"/>
+  <text x="425" y="24" font-family="monospace" font-size="12" fill="#94a3b8" text-anchor="middle">Task 5: Enterprise Smart Asset &amp; Inventory System (OOP Architecture)</text>
+
+  <!-- Top Base Class: LibraryItem (ABC) -->
+  <g transform="translate(275, 55)">
+    <rect width="300" height="135" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+    <rect width="300" height="30" rx="8" fill="#9d174d"/>
+    <text x="150" y="20" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">&lt;&lt;Abstract Base Class&gt;&gt; LibraryItem</text>
+    <g transform="translate(15, 45)" font-family="monospace" font-size="10" fill="#cbd5e1">
+      <text y="12" fill="#f472b6">- __item_id: str, __title: str, __price: float</text>
+      <text y="28" fill="#f472b6">- __is_borrowed: bool, __borrower: str, __borrow_date: date</text>
+      <line x1="0" y1="36" x2="270" y2="36" stroke="#475569" stroke-width="1"/>
+      <text y="50" fill="#38bdf8">+ checkout(borrower), checkin()</text>
+      <text y="66" fill="#38bdf8">+ calculate_late_fee(days_overdue)* : float</text>
+      <text y="82" fill="#38bdf8">+ display_metadata()* : dict | __str__, __len__, __repr__, __eq__</text>
+    </g>
+  </g>
+
+  <!-- Inheritance Arrows -->
+  <g stroke="#ec4899" stroke-width="2" fill="none">
+    <path d="M 425 190 L 425 215"/>
+    <path d="M 155 215 L 695 215"/>
+    <path d="M 155 215 L 155 235"/>
+    <path d="M 425 215 L 425 235"/>
+    <path d="M 695 215 L 695 235"/>
+  </g>
+
+  <!-- Subclass 1: Book -->
+  <g transform="translate(45, 235)">
+    <rect width="220" height="135" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="220" height="26" rx="8" fill="#1d4ed8"/>
+    <text x="110" y="17" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Book (Inherits LibraryItem)</text>
+    <g transform="translate(12, 40)" font-family="monospace" font-size="10" fill="#cbd5e1">
+      <text y="12">- __isbn: str, __author: str</text>
+      <text y="26">- __pages: int</text>
+      <line x1="0" y1="34" x2="195" y2="34" stroke="#475569" stroke-width="1"/>
+      <text y="48" fill="#34d399">+ calculate_late_fee() ($0.50/day)</text>
+      <text y="62" fill="#34d399">+ display_metadata()</text>
+      <text y="76" fill="#34d399">+ __len__() ➜ page count</text>
+    </g>
+  </g>
+
+  <!-- Subclass 2: Magazine -->
+  <g transform="translate(315, 235)">
+    <rect width="220" height="135" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect width="220" height="26" rx="8" fill="#b45309"/>
+    <text x="110" y="17" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Magazine (Inherits)</text>
+    <g transform="translate(12, 40)" font-family="monospace" font-size="10" fill="#cbd5e1">
+      <text y="12">- __issue_number: int</text>
+      <text y="26">- __publisher, __periodicity</text>
+      <line x1="0" y1="34" x2="195" y2="34" stroke="#475569" stroke-width="1"/>
+      <text y="48" fill="#34d399">+ calculate_late_fee() ($1.00/day)</text>
+      <text y="62" fill="#34d399">+ display_metadata()</text>
+      <text y="76" fill="#34d399">+ __len__() ➜ issue #</text>
+    </g>
+  </g>
+
+  <!-- Subclass 3: DigitalMedia -->
+  <g transform="translate(585, 235)">
+    <rect width="220" height="135" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="220" height="26" rx="8" fill="#047857"/>
+    <text x="110" y="17" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">DigitalMedia (Inherits)</text>
+    <g transform="translate(12, 40)" font-family="monospace" font-size="10" fill="#cbd5e1">
+      <text y="12">- __file_format, __file_size_mb</text>
+      <text y="26">- __download_url</text>
+      <line x1="0" y1="34" x2="195" y2="34" stroke="#475569" stroke-width="1"/>
+      <text y="48" fill="#34d399">+ calculate_late_fee() ($0.25/day)</text>
+      <text y="62" fill="#34d399">+ display_metadata()</text>
+      <text y="76" fill="#34d399">+ __len__() ➜ file size MB</text>
+    </g>
+  </g>
+
+  <!-- Bottom Footer -->
+  <g transform="translate(45, 390)">
+    <rect width="760" height="42" rx="6" fill="#020617" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="26" font-family="sans-serif" font-size="12" fill="#94a3b8">
+      ⚙️ <tspan fill="#f8fafc" font-weight="bold">Encapsulation &amp; Validation:</tspan> All attributes private with @property setters rejecting negative pricing and invalid IDs.
+    </text>
+  </g>
+</svg>

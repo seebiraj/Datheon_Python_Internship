@@ -1,0 +1,6 @@
+# Datheon Python Programming Internship Dependencies
+# Strict Rule: Zero paid packages. Built exclusively with Python 3 Standard Library.
+# pytest is included only for automated unit testing and CI test suite validation.
+
+pytest>=7.0.0
+pytest-cov>=4.0.0

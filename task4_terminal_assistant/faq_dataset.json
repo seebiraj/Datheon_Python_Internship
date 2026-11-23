@@ -1,0 +1,102 @@
+{
+  "bot_name": "Datheon Nova Assistant",
+  "version": "2.4.0",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "\\b(hello|hi|hey|greetings|good morning|good afternoon|good evening|yo)\\b"
+      ],
+      "responses": [
+        "Hello! I am Datheon Nova, your automated interactive assistant. How can I assist you today?",
+        "Greetings! Welcome to Datheon Support. What topic or service can I help you explore?"
+      ]
+    },
+    {
+      "tag": "business_hours",
+      "patterns": [
+        "\\b(hours?|open|close|timings?|schedule|operating|weekend)\\b"
+      ],
+      "responses": [
+        "Our digital platforms and automated support operate 24/7. Our live engineering and advisory desks are open Monday through Friday, 9:00 AM to 6:00 PM EST."
+      ]
+    },
+    {
+      "tag": "products_catalog",
+      "patterns": [
+        "\\b(products?|services?|catalog|offerings?|what do you do|build)\\b"
+      ],
+      "responses": [
+        "Datheon offers enterprise-grade developer programs, AI & Python application workflows, cloud security assessments, and career-accelerating technical internships."
+      ]
+    },
+    {
+      "tag": "pricing_discounts",
+      "patterns": [
+        "\\b(price|pricing|cost|fee|charge|discount|free|paid)\\b"
+      ],
+      "responses": [
+        "Our Standard Internship Programs are 100% Free with zero enrollment or evaluation fees. Enterprise licenses and bespoke mentoring packages start with customized modular tiers."
+      ]
+    },
+    {
+      "tag": "refund_returns",
+      "patterns": [
+        "\\b(refund|return|money back|policy|cancellation)\\b"
+      ],
+      "responses": [
+        "All free-tier educational credentials are complimentary. For paid enterprise services, we provide a 14-day hassle-free money-back guarantee if deliverables do not match contract scope."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "\\b(bug|error|issue|problem|broken|help|fail|crash|debug)\\b"
+      ],
+      "responses": [
+        "If you are experiencing technical difficulties, please ensure your Python environment is version 3.10+ and run with '--verbose'. You can also inspect the logs or open a GitHub issue in our repository."
+      ]
+    },
+    {
+      "tag": "contact_agent",
+      "patterns": [
+        "\\b(contact|reach|email|phone|call|human|agent|representative|talk)\\b"
+      ],
+      "responses": [
+        "You can connect with our human advisory desk at support@datheon.tech or reach out on LinkedIn @Datheon for official verifications and partnership inquiries."
+      ]
+    },
+    {
+      "tag": "datheon_internship",
+      "patterns": [
+        "\\b(internship|program|python internship|tasks?|certificate|lor|batch)\\b"
+      ],
+      "responses": [
+        "The Datheon Python Programming Internship is a 4-week self-paced industry challenge. Complete 2 to 3 tasks, push your code to GitHub ('Datheon_Python_Internship'), and receive your QR-coded Verified Certificate and LOR!"
+      ]
+    },
+    {
+      "tag": "help_topics",
+      "patterns": [
+        "\\b(options|topics|commands|what can you do|menu)\\b"
+      ],
+      "responses": [
+        "I can answer queries on:\n  1. Operating Hours ('hours')\n  2. Products & Services ('services')\n  3. Pricing & Fees ('pricing')\n  4. Refund & Cancellation Policy ('refund')\n  5. Technical Support ('support')\n  6. Datheon Internship Details ('internship')\n  7. Contact Human Desk ('contact')"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "\\b(bye|goodbye|exit|quit|see you|farewell|later)\\b"
+      ],
+      "responses": [
+        "Goodbye! Thank you for interacting with Datheon Nova. Have a wonderful and productive day ahead!",
+        "Farewell! Feel free to return anytime if you have more questions. Happy coding!"
+      ]
+    }
+  ],
+  "fallbacks": [
+    "I'm sorry, I didn't quite catch that. Could you please rephrase? You can type 'topics' to see what I can help with.",
+    "My NLP pattern matcher could not resolve that query with high confidence. Type 'topics' for suggestions or 'contact' to reach our support team."
+  ]
+}
